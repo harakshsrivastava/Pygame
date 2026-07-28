@@ -6,7 +6,7 @@ def main():
     screen = pygame.display.set_mode((screen_width, screen_height))
     pygame.display.set_caption('color changing sprite')
 
-    # Mapping of color names to RGB values
+
     colors = {
         'red': pygame.Color('red'),
         'green': pygame.Color('green'),
@@ -36,7 +36,7 @@ def main():
         x = min(max(0, x), screen_width - sprite_width)
         y = min(max(0, y), screen_height - sprite_height)
 
-        # Change color based on boundary contact
+
         if x == 0: current_color = colors['blue']
         elif x == screen_width - sprite_width: current_color = colors['yellow']
         elif y == 0: current_color = colors['red']
